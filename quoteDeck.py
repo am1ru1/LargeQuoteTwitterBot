@@ -7,7 +7,7 @@ CONSUMER_KEY = 'Your consumer key here'
 CONSUMER_SECRET = 'Your consumer secret key here'
 ACCESS_KEY = 'Your access key here'
 ACCESS_SECRET = 'Your access secret key here'
-MAX_TWEET_LENGTH = 137
+MAX_TWEET_LENGTH = 140
 FILE_TO_USE = "your quotes file here e.g quotes.txt"
 
 def randomLine(afile):
@@ -21,8 +21,8 @@ def makeArray(astring):
 		if noOfTweets == 1:
 			theArray.append(astring)
 		else:
-			theArray.append(astring[:astring[:MAX_TWEET_LENGTH].rindex(" ")]+'...')
-			astring = astring[astring[:MAX_TWEET_LENGTH].rindex(" "):]
+			theArray.append(astring[:astring[:MAX_TWEET_LENGTH-2].rindex(" ")]+'...')
+			astring = astring[astring[:MAX_TWEET_LENGTH-2].rindex(" "):]
 		noOfTweets -= 1
 	return theArray
 
