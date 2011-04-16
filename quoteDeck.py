@@ -12,10 +12,20 @@ FILE_TO_USE = "your quotes file here e.g quotes.txt"
 
 def randomLine(afile):
 	lines = open(afile).readlines()
-	return lines[random.randint(0, len(lines))]
+	return lines[random.randint(0, len(lines)-1)]
 
 def makeArray(astring):
-	noOfTweets = (len(astring)/MAX_TWEET_LENGTH)+1
+	try:
+		astring.index("\n")
+		astring = sanatiseString(astring)
+	except ValueError:
+		#No return character found, string is fine as is.
+	
+	if len(astring)%MAX_TWEET_LENGTH == 0:
+		noOfTweets = len(astring)/MAX_TWEET_LENGTH
+	else:
+		noOfTweets = (len(astring)/MAX_TWEET_LENGTH)+1
+
 	theArray = []
 	while noOfTweets > 0:
 		if noOfTweets == 1:
@@ -26,6 +36,9 @@ def makeArray(astring):
 		noOfTweets -= 1
 	return theArray
 
+def sanatiseString(astring):
+	sanatisedString = astring[:astring.index("\n")]
+	return sanatisedString
 	
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
