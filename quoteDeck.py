@@ -21,8 +21,8 @@ def makeArray(astring):
 		if noOfTweets == 1:
 			theArray.append(astring)
 		else:
-			theArray.append(astring[0:astring[0:137].rindex(" ")]+'...')
-			astring = astring[astring[0:137].rindex(" "):]
+			theArray.append(astring[:astring[:MAX_TWEET_LENGTH].rindex(" ")]+'...')
+			astring = astring[astring[:MAX_TWEET_LENGTH].rindex(" "):]
 		noOfTweets -= 1
 	return theArray
 
