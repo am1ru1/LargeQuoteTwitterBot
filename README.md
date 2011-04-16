@@ -36,8 +36,6 @@ To come soon.
 
 ##To-Do
 
--Better length checking on strings, as bugs currently exist in certain circumstances.
-
 -Multi-line capabilities for botSay
 
 -Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script.
