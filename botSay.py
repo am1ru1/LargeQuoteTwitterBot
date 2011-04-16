@@ -2,7 +2,6 @@
  
 import sys
 import tweepy
-import random
 
 CONSUMER_KEY = 'Your consumer key here'
 CONSUMER_SECRET = 'Your consumer secret key here'
