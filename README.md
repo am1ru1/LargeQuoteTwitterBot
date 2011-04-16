@@ -38,4 +38,6 @@ To come soon.
 
 -Multi-line capabilities for botSay
 
--Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script.
+-Perhaps introduce a module that, when the bot is run, follows all unfollowed people that follow the bot
+
+-Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script
