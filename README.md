@@ -1,6 +1,6 @@
 What is LargeQuoteTwitterBot?
 =
-LargeQuoteTwitterBot is, at the moment, 2 python scripts that use the Twitter api, through the library Tweepy which is availiable at [here](https://github.com/joshthecoder/tweepy).
+LargeQuoteTwitterBot is, at the moment, 2 python scripts that use the Twitter api, through the library Tweepy which is availiable [here](https://github.com/joshthecoder/tweepy).
 
 [quoteDeck.py](https://github.com/MikeNaylor/LargeQuoteTwitterBot/blob/master/quoteDeck.py) is a script that, when run, takes a random line from a .txt file and tweets it. If the quote is too big for twitter, it will tweet it in however many tweets necessary, in reverse order as to preserve readability. For example the following quote:
 
