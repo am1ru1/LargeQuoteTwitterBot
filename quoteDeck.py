@@ -19,7 +19,7 @@ def makeArray(astring):
 		astring.index("\n")
 		astring = sanatiseString(astring)
 	except ValueError:
-		#No return character found, string is fine as is.
+		print 'No return character found, string is fine as is.'
 	
 	if len(astring)%MAX_TWEET_LENGTH == 0:
 		noOfTweets = len(astring)/MAX_TWEET_LENGTH
