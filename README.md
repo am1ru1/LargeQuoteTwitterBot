@@ -7,12 +7,15 @@ LargeQuoteTwitterBot is, at the moment, 2 python scripts that use the Twitter ap
 >This quote is far too long for a tweet, far too long. The verbose nature of the afformentioned quote renders it unable to conform to the Twitter character limit of 140. Alas, this shall quote shall take up 2 tweets.
 
 Will be tweeted as tweet 1:
+
 >Twitter character limit of 140. Alas, this shall quote shall take up 2 tweets.
 
 Tweet 2:
+
 >This quote is far too long for a tweet, far too long. The verbose nature of the afformentioned quote renders it unable to conform to the...
 
 Thus, this will appear on the twitter feed as:
+
 >This quote is far too long for a tweet, far too long. The verbose nature of the afformentioned quote renders it unable to conform to the...
 
 >Twitter character limit of 140. Alas, this shall quote shall take up 2 tweets.
@@ -22,6 +25,7 @@ Thus, this will appear on the twitter feed as:
 > $ python botSay.py 'This is a tweet, to be tweeted'
 
 Will tweet:
+
 >This is a tweet, to be tweeted
 
 Multi-tweet capabilities for 140+ character string arguments is not yet implemented.
