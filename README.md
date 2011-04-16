@@ -1,4 +1,4 @@
-t is LargeQuoteTwitterBot?
+What is LargeQuoteTwitterBot?
 =
 LargeQuoteTwitterBot is, at the moment, 2 python scripts that use the Twitter api, through the library Tweepy which is availiable at [here](https://github.com/joshthecoder/tweepy).
 
