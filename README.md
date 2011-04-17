@@ -53,8 +53,8 @@ You will be presented with this page:
 Take your Consumer Key and Consumer Secret code and run the accessKeys.py script, passing your keys as below:
 
 > $ python accessKeys.py 'Your Consumer Key' 'Your Consumer Secret'
->Authorization url: http://api.twitter.com/oauth/authorize?oauth_token=kU29aUKmBhpgMSXk7T20wYPlEMg063n3TdP7pwvHhw
->Verification PIN:
+> Authorization url: http://api.twitter.com/oauth/authorize?oauth_token=kU29aUKmBhpgMSXk7T20wYPlEMg063n3TdP7pwvHhw
+> Verification PIN:
 
 Go to the authorization url the script returns and you will be presented with this page:
 
@@ -66,9 +66,9 @@ Sign into the twitter account you wish the bot to use, and click Allow. You will
 
 Simply enter the PIN that is returned into the script, as below:
 
->Verification PIN: YourPIN
->Your ACCESS_KEY = 'Your Access Key'
->Your ACCESS_SECRET = 'Your Access Secret'
+> Verification PIN: YourPIN
+> Your ACCESS_KEY = 'Your Access Key'
+> Your ACCESS_SECRET = 'Your Access Secret'
 
 Make a note of these 2 keys. Open up quoteDeck.py in a prefered text editor and fill in the CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY and ACCESS_SECRET with ther relevant information. Your bot is now set up to tweet to the linked account, using a .txt file of quotes (1 quote per line). Fill in the FILE_TO_USE field with the location of your quotes file. Your bot is now set up. To run it, simply run:
 
