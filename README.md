@@ -46,4 +46,4 @@ To-do:
 
 -Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script
 
--Move quotes from a text file to a MySQL database and use PyMySQL to manipulate them. This would improve scalability and allow for relational databases, such that a database of used quotes could be kept (using foreign keys), and wiped at certain time periods (perhaps once a week) in order to reduce potential quote repetition.
+-Move quotes from a text file to a SQLite3 database and use the package sqlite3 in the standard library to manipulate them. This would improve scalability and allow for relational databases, such that a database of used quotes could be kept (using foreign keys), and wiped at certain time periods (perhaps once a week) in order to reduce potential quote repetition.
