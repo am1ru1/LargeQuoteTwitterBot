@@ -45,3 +45,5 @@ To-do:
 -Perhaps introduce a module that, when the bot is run, follows all unfollowed people that follow the bot
 
 -Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script
+
+-Move quotes from a text file to a MySQL database and use PyMySQL to manipulate them. This would improve scalability and allow for relational databases, such that a database of used quotes could be kept (using foreign keys), and at certain time periods (perhaps once a week) in order to reduce potential quote repetition.
