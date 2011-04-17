@@ -4,7 +4,7 @@ LargeQuoteTwitterBot is, at the moment, 2 python scripts that use the Twitter ap
 
 [quoteDeck.py](https://github.com/MikeNaylor/LargeQuoteTwitterBot/blob/master/quoteDeck.py) is a script that, when run, takes a random line from a .txt file and tweets it. If the quote is too big for twitter, it will tweet it in however many tweets necessary, in reverse order as to preserve readability. For example the following quote:
 
->This quote is far too long for a tweet, far too long. The verbose nature of the afformentioned quote renders it unable to conform to the Twitter character limit of 140. Alas, this shall quote shall take up 2 tweets.
+>This quote is far too long for a tweet, far too long. The verbose nature of the aforementioned quote renders it unable to conform to the Twitter character limit of 140. Alas, this shall quote shall take up 2 tweets.
 
 Will be tweeted as tweet 1:
 
@@ -12,11 +12,11 @@ Will be tweeted as tweet 1:
 
 Tweet 2:
 
->This quote is far too long for a tweet, far too long. The verbose nature of the afformentioned quote renders it unable to conform to the...
+>This quote is far too long for a tweet, far too long. The verbose nature of the aforementioned quote renders it unable to conform to the...
 
 Thus, this will appear on the twitter feed as:
 
->This quote is far too long for a tweet, far too long. The verbose nature of the afformentioned quote renders it unable to conform to the...
+>This quote is far too long for a tweet, far too long. The verbose nature of the aforementioned quote renders it unable to conform to the...
 
 >Twitter character limit of 140. Alas, this shall quote shall take up 2 tweets.
 
