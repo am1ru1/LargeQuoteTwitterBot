@@ -32,18 +32,54 @@ Multi-tweet capabilities for 140+ character string arguments is not yet implemen
 
 ##Setup
 
-To-do:
+###Installing Tweepy:
 
--Install tweepy and dependancies
+- easy_install tweepy
 
--Register application with Twitter Aps to get the relevant keys
+or source code from Git
+
+1. git clone git://github.com/joshthecoder/tweepy.git
+2. cd tweepy
+3. python setup.py install
+
+###Registering With Twitter Dev To Get Keys:
+
+Firstly, go to the [Twitter Dev new application form](https://dev.twitter.com/apps/new) and register your application. Fill in the fields how you wish (note that your application name determines what your tweets will come from. e.g 2 minutes ago via QuoteDeck). Ensure that the application type is Client and that it has Read & Write access.
+
+You will be presented with this page:
+
+![Your application keys](http://i.imgur.com/lvGri.jpg)
+
+Take your Consumer Key and Consumer Secret code and run the accessKeys.py script, passing your keys as below:
+
+> $ python accessKeys.py 'Your Consumer Key' 'Your Consumer Secret'
+>Authorization url: http://api.twitter.com/oauth/authorize?oauth_token=kU29aUKmBhpgMSXk7T20wYPlEMg063n3TdP7pwvHhw
+>Verification PIN:
+
+Go to the authorization url the script returns and you will be presented with this page:
+
+![Authorization page](http://i.imgur.com/v1zlM.jpg)
+
+Sign into the twitter account you wish the bot to use, and click Allow. You will be presented with this page:
+
+![Your PIN number](http://i.imgur.com/f50Cs.jpg)
+
+Simply enter the PIN that is returned into the script, as below:
+
+>Verification PIN: YourPIN
+>Your ACCESS_KEY = 'Your Access Key'
+>Your ACCESS_SECRET = 'Your Access Secret'
+
+Make a note of these 2 keys. Open up quoteDeck.py in a prefered text editor and fill in the CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY and ACCESS_SECRET with ther relevant information. Your bot is now set up to tweet to the linked account, using a .txt file of quotes (1 quote per line). Fill in the FILE_TO_USE field with the location of your quotes file. Your bot is now set up. To run it, simply run:
+
+> $ python quoteDeck.py
 
 ##To-Do
 
--Multi-line capabilities for botSay
+- Multi-line capabilities for botSay
 
--Perhaps introduce a module that, when the bot is run, follows all unfollowed people that follow the bot
+- Perhaps introduce a module that, when the bot is run, follows all unfollowed people that follow the bot
 
--Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script
+- Perhaps incorporate botSay into quoteDeck as a parameter passed when running the script
 
--Move quotes from a text file to a SQLite3 database and use the package sqlite3 in the standard library to manipulate them. This would improve scalability and allow for relational databases, such that a database of used quotes could be kept (using foreign keys), and wiped at certain time periods (perhaps once a week) in order to reduce potential quote repetition.
+- Move quotes from a text file to a SQLite3 database and use the package sqlite3 in the standard library to manipulate them. This would improve scalability and allow for relational databases, such that a database of used quotes could be kept (using foreign keys), and wiped at certain time periods (perhaps once a week) in order to reduce potential quote repetition.
