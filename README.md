@@ -89,3 +89,5 @@ Make a note of these 2 keys. Open up quoteDeck.py in a prefered text editor and 
 - For better user friendliness and flexibility use a config file for keys instead of having the user alter the script code itself.
 
 - Move quotes from a text file to a SQLite3 database and use the package sqlite3 in the standard library to manipulate them. This would improve scalability and allow for relational databases, such that a database of used quotes could be kept (using foreign keys), and wiped at certain time periods (perhaps once a week) in order to reduce potential quote repetition.
+
+- Ensure all code meets PEP 8 standards.
